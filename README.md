@@ -24,7 +24,7 @@ During legal discovery, documents are often produced with Bates numbers (unique 
 
 1. Clone this repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/tjdaley/bates_logger.git
 cd bates-number-extractor
 ```
 
