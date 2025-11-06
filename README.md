@@ -3,6 +3,11 @@ _Automated Bates-number extraction for searchable PDFs in Texas family-law disco
 
 A Python script for extracting Bates numbers from PDF discovery documents and organizing them into a structured CSV format. This tool is designed for legal professionals who need to efficiently catalog and manage large volumes of discovery documents with embedded Bates numbering.
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+
 ## Overview
 
 During legal discovery, documents are often produced with Bates numbers (unique identifiers) stamped on each page. These numbers may be embedded in different layers of the PDF (footers, annotations, stamps) and are not always reflected in the filename. This script extracts the first and last Bates numbers from each PDF file and outputs the results to a CSV file for easy import into case management systems.
@@ -16,12 +21,11 @@ During legal discovery, documents are often produced with Bates numbers (unique 
 - **Error Handling**: Continues processing even when individual files encounter issues
 - **CSV Output**: Generates structured data ready for import into legal case management systems
 
-## Stack
+## Built With
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![PyMuPDF](https://img.shields.io/badge/-PyMuPDF-8B0000?logo=adobeacrobatreader&logoColor=white)
+![Regex](https://img.shields.io/badge/-Regex-F7DF1E?logo=regex&logoColor=black)
 
 ## Requirements
 
