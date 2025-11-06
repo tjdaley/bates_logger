@@ -1,4 +1,5 @@
-# Bates Number Extractor
+# Bates Logger
+_Automated Bates-number extraction for searchable PDFs in Texas family-law discovery._
 
 A Python script for extracting Bates numbers from PDF discovery documents and organizing them into a structured CSV format. This tool is designed for legal professionals who need to efficiently catalog and manage large volumes of discovery documents with embedded Bates numbering.
 
@@ -14,6 +15,13 @@ During legal discovery, documents are often produced with Bates numbers (unique 
 - **Range Detection**: Identifies first and last Bates numbers for multi-page documents
 - **Error Handling**: Continues processing even when individual files encounter issues
 - **CSV Output**: Generates structured data ready for import into legal case management systems
+
+## Stack
+
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
 
 ## Requirements
 
@@ -134,3 +142,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Author
 
 **Thomas J. Daley** is a family law litigation attorney practicing primarily in Collin County, Texas and representing clients in family disputes throughout the State of Texas and the United States. As a tech entrepreneur, he leverages AI to bring high-quality legal services that work better, faster, and cheaper than traditional approaches to resolving cases.
+
+---
+
+<p align="center">Made with ❤️ in Texas by <a href="https://github.com/tjdaley">Tom Daley</a></p>
+
