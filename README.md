@@ -30,15 +30,16 @@ During legal discovery, documents are often produced with Bates numbers (unique 
 ## Requirements
 
 - Python 3.6+
+- Git client
 - pymupdf library
 
+## Prerequisites
+
+*You will need to have the ```git``` software installed on your computer before you begin ([GIT Installation Page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)). For Windows, you can install from this link: [Windows Installation](https://git-scm.com/download/win). For Mac, you can install from this link: [Mac Installation](https://git-scm.com/download/mac).*
+
+*You need the ```python``` interpreter installed on your system before you can run the script. ([Python Installation page](https://www.python.org/downloads/windows/)).*
+
 ## Installation
-
-You will need to have the ```git``` software installed on your computer before you begin ([GIT Installation Page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)).
-
-For Windows, you can install from this link: [Windows Installation](https://git-scm.com/download/win)
-
-For Mac, you can install from this link: [Mac Installation](https://git-scm.com/download/mac)
 
 1. Clone this repository:
 ```bash
@@ -46,7 +47,13 @@ git clone https://github.com/tjdaley/bates_logger.git
 cd bates-number-extractor
 ```
 
-2. Install required dependencies:
+2. Create a virtual environment and activate the environment:
+```bash
+python -m venv venv
+venv\scripts\activate.bat
+```
+
+4. Install required dependencies:
 ```bash
 pip install pymupdf
 ```
@@ -63,7 +70,7 @@ The following variables control the ooperation of the script:
 
 ### Basic Usage
 
-Update the `file_list` variable with your PDF file paths and run:
+Update the ```BASE_DIRECTORY``` variable and your ```BATES_PATTERN``` values and then run the script:
 
 ```bash
 python bates_extractor.py
@@ -85,8 +92,6 @@ file_list = [
 Scan a directory recursively for all PDF files:
 ```python
 BASE_DIRECTORY = r"C:\path\to\discovery\documents"
-file_paths = scan_directory_for_pdfs(base_directory)
-process_file_list(file_paths, OUTPUT_FILE)
 ```
 
 ## Bates Number Pattern
@@ -103,13 +108,14 @@ The script generates a CSV file with the following columns:
 - `beginning_bates`: First Bates number found in the document
 - `ending_bates`: Last Bates number found in the document  
 - `filename`: Name of the PDF file (without path)
+- `path`: Full path name of the file
 
 Example output:
 ```csv
 beginning_bates,ending_bates,filename
-TJD000001,TJD000005,Discovery_Production.pdf
-TJD000010,TJD000010,Expert_Report.pdf
-TJD000025,TJD000030,Bank_Statements.pdf
+TJD000001,TJD000005,Discovery_Production.pdf,c:\clients\xyz\statements\Discovery_Production.pdf
+TJD000010,TJD000010,Expert_Report.pdf,c:\clients\xyz\statements\Expert_Report.pdf
+TJD000025,TJD000030,Bank_Statements.pdf,c:\clients\xyz\statements\Bank_Statements.pdf
 ```
 
 ## Error Handling
