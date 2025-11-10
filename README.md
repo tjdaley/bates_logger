@@ -34,6 +34,12 @@ During legal discovery, documents are often produced with Bates numbers (unique 
 
 ## Installation
 
+You will need to have the ```git``` software installed on your computer before you begin ([GIT Installation Page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)).
+
+For Windows, you can install from this link: [Windows Installation](https://git-scm.com/download/win)
+
+For Mac, you can install from this link: [Mac Installation](https://git-scm.com/download/mac)
+
 1. Clone this repository:
 ```bash
 git clone https://github.com/tjdaley/bates_logger.git
