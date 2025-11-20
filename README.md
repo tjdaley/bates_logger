@@ -48,10 +48,19 @@ cd bates_logger
 ```
 
 2. Create a virtual environment and activate the environment:
+
+**WINDOWS**
 ```bash
 python -m venv venv
 venv\scripts\activate.bat
 ```
+
+**MAC/LINUX**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
 
 4. Install required dependencies:
 ```bash
