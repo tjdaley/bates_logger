@@ -20,7 +20,7 @@ BATES_PATTERN = (
     r'JGS\s*\d{6}'
     r')'
 )
-BASE_DIRECTORY = r"Z:\Shared\Client Files\Plano\NAG\Schuler, Jill (Divorce) 40578 - RLR, TJD\Experts\Aaron Ballard"
+BASE_DIRECTORY = r"Z:\Shared\Client Files\Plano\Discovery"
 OUTPUT_FILE = "bates_log.csv"
 
 
