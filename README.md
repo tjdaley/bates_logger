@@ -62,7 +62,7 @@ source venv/bin/activate
 ```
 
 
-4. Install required dependencies:
+3. Install required dependencies:
 ```bash
 pip install pymupdf
 ```
