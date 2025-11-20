@@ -13,7 +13,7 @@ from pathlib import Path
 BATES_PATTERN = (
     r'(?:'
     r'3rd Party Production\s*-\s*\d{6}|'
-    r'MFLG SCHULER\s*\d{6}|'
+    r'MFLG XXX\s*\d{6}|'
     r'3rd Party\s*-\s*\d{6}|'
     r'\(2025-\d{2}\.\d{2}\)\s*\d{6}|'
     r'2025-\d{2}\.\d{2}\s*\d{6}|'
